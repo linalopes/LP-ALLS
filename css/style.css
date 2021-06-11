@@ -304,8 +304,8 @@ b, strong {
 }
 
 ::selection {
-  background: #e2071e;
-  color: #ffffff;
+  background: #ededed;
+  color: #851f82;
 }
 
 /* 2. Common responsive styles */
