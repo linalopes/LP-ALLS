@@ -226,7 +226,8 @@
   color: #ffffff;
 }
 .btn.action-1:hover {
-  background-color: #bf7300;
+  background-color: #ededed;
+  color: #851f82;
 }
 .btn.action-2 {
   background-color: #c2d653;
