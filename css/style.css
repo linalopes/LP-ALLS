@@ -774,7 +774,7 @@ b, strong {
   .header_16{
     height: 100vh;
     background-image: url(../i/header_vertical.jpg);
-    background-attachment: scroll;
+    background-attachment: local;
     background-size: cover;
     }
   .header_16 .img {
