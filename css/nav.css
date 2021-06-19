@@ -298,7 +298,7 @@ a.accordion-toggle, a:visited.accordion-toggle {
 	border-radius: 60px;
 	margin-bottom: 30px;
 	padding: 0;
-	border: solid 2px #4d5559;
+/*	border: solid 2px #4d5559;*/
 }
 .de_tab.tab_style_4 .de_nav li img {
 	width: auto;
