@@ -305,17 +305,16 @@ b, strong {
 
 ::selection {
   background: #ededed;
-  color: #851f82;
 }
 
 /* 2. Common responsive styles */
 /* Smaller than 1200px */
 @media (max-width: 1199.98px) {
   header[class^=pt-], header[class*=" pt-"], section[class^=pt-], section[class*=" pt-"] {
-    padding-top: 80px;
+/*    padding-top: 80px;*/
   }
   header[class^=pb-], header[class*=" pb-"], section[class^=pb-], section[class*=" pb-"] {
-    padding-bottom: 80px;
+/*    padding-bottom: 80px;*/
   }
 
   h1 br, h2 br, h3 br, .text-adaptive br {
@@ -1325,88 +1324,6 @@ b, strong {
     bottom: 0;
     width: 40px;
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 78%);
-  }
-}
-
-.content_34 #copy_from_me {
-  background: rgba(237, 237, 237, 0.5);
-  font-family: Courier New, monospace;
-}
-.content_34 #copy_from_me pre {
-  color: #851f82;
-}
-@media (max-width: 992.98px) {
-  .content_34 .right {
-    margin-top: 50px;
-    padding: 0;
-  }
-}
-
-/* 6. Testimonials */
-@media (max-width: 767.98px) {
-  .testimonial_2 .text-adaptive {
-    margin-top: 10px;
-    margin-bottom: 25px;
-  }
-}
-
-@media (max-width: 1199.98px) {
-  .testimonial_3[class^=pb-], .testimonial_3[class*=" pb-"] {
-    padding-bottom: 20px;
-  }
-}
-@media (max-width: 767.98px) {
-  .testimonial_3 h2, .testimonial_3 .block {
-    margin-bottom: 30px;
-  }
-}
-
-.testimonial_4 .block {
-  border: 2px solid #ededed;
-}
-@media (max-width: 991.98px) {
-  .testimonial_4 .holder {
-    max-width: 570px;
-  }
-}
-@media (max-width: 767.98px) {
-  .testimonial_4 .block {
-    padding: 30px;
-  }
-  .testimonial_4 .text-adaptive {
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 575.98px) {
-  .testimonial_4 .inner {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 1199.98px) {
-  .testimonial_5[class^=pb-], .testimonial_5[class*=" pb-"] {
-    padding-bottom: 30px;
-  }
-}
-
-.testimonial_6 .block {
-  border: 2px solid rgba(255, 255, 255, 0.15);
-}
-.testimonial_6 .author {
-  left: 0;
-  bottom: 0;
-}
-@media (max-width: 575.98px) {
-  .testimonial_6 .inner {
-    padding-left: 20px;
-    padding-bottom: 0;
-  }
-  .testimonial_6 .info {
-    margin-left: 0;
-  }
-  .testimonial_6 .author {
-    margin-top: 10px;
-    position: static;
   }
 }
 
