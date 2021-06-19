@@ -11,7 +11,7 @@
     border: none;
     background-color: #ededed;
   }
-.btnCircle:hover{
+.btnCircle:hover, .btnCircle:focus{
     background-color: #851f82;
 }
 
