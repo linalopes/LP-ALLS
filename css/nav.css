@@ -11,6 +11,9 @@
     border: none;
     background-color: #ededed;
   }
+.btnCircle:hover{
+    background-color: #851f82;
+}
 
 #tab1, #tab2, #tab3 {
     display: none;
