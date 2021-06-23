@@ -38,71 +38,79 @@
                         </div>
                     </div>
                     <div class="order-3 order-lg-0 col-xl-5 col-lg-6 col-md-10">
-                        <form id="user-info-form" class="pt-25 pb-35 radius10">
+                        <form id="user-info-form" class="pt-25 pb-35 radius10" method="post">
                             <div class="row">
                                 <div class="col-md-12 mb-35 block" data-aos="fade-down" data-aos-delay="0">
                                     <div class="f-14 semibold sp-20">
                                         Nome Completo
                                     </div>
-                                    <input id="name-input" type="text" name="firstname" required="required" class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
+                                    <input id="name-input" type="text" name="name" required minlength="3" class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12 mb-35 block" data-aos="fade-down" data-aos-delay="0">
+                                <div class="col-md-12 mb-35 block" data-aos="fade-down" data-aos-delay="100">
                                     <div class="f-14 semibold sp-20">
                                         E-mail
                                     </div>
-                                    <input id="email-input" type="text" name="firstname" required="required" class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
+                                    <input id="email-input" type="text" name="email" required class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-8 mb-35 block" data-aos="fade-down" data-aos-delay="0">
-                                    <div class="f-14 semibold sp-20">
-                                        Endereço
-                                    </div>
-                                    <input id="address-input" type="text" name="address" required="required" class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
-                                </div>
-                                <div class="col-md-4 mb-35 block" data-aos="fade-down" data-aos-delay="250">
-                                    <div class="f-14 semibold sp-20">
+                                <div class="col-md-4 mb-35 block" data-aos="fade-down" data-aos-delay="200">
+                                    <div class="f-14 semibold">
                                         CEP
                                     </div>
-                                    <input id="cep-input" type="text" name="zip" required="required" class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
+                                    <input id="cep-input" type="text" name="cep" required="required" class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-35 block" data-aos="fade-down" data-aos-delay="0">
+                                <div class="col-md-5 mb-35 block" data-aos="fade-down" data-aos-delay="200">
                                     <div class="f-14 semibold sp-20">
-                                        Cidade/Estado
+                                        Cidade
                                     </div>
                                     <input id="city-input" type="text" name="city" required="required" class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
                                 </div>
-                                <div class="col-md-6 mb-35 block" data-aos="fade-down" data-aos-delay="250">
+                                <div class="col-md-3 mb-35 block" data-aos="fade-down" data-aos-delay="200">
+                                    <div class="f-14 semibold sp-20">
+                                        Estado
+                                    </div>
+                                    <input id="uf-input" type="text" name="uf" required="required" class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-35 block" data-aos="fade-down" data-aos-delay="300">
+                                    <div class="f-14 semibold sp-20">
+                                        Endereço
+                                    </div>
+                                    <input id="address-input" type="text" name="address" required minlength="3" class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-35 block" data-aos="fade-down" data-aos-delay="400">
                                     <div class="f-14 semibold text-uppercase sp-20">
                                         CPF
                                     </div>
-                                    <input id="cpf-input" type="text" name="country" required="required" class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
+                                    <input id="cpf-input" type="text" name="cpf" required class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
                                 </div>
                             </div>
                             <div data-aos="fade-down" data-aos-delay="250">
                                 <label class="mt-25 input-control input-check border-gray checked-action-1">
-                                    <input type="checkbox" name="rules" cheecked="checked">
+                                    <input type="checkbox" name="aceites" cheecked="checked" required>
                                     <div class="mr-10 input-control-box radius6">
                                         <i class="fas fa-check input-control-icon f-12 color-white">
                                         </i>
                                     </div>
                                     <span class="input-control-label">
-                                        Eu li e concordo com os <a href="#" class="underline color-main link">Termos de Serviço</a>
+                                        Eu li e concordo com os <a href="https://caminoschool.com.br/wp-content/uploads/2021/04/politica-de-seguranca-e-privacidade.pdf" target="_blank" class="underline color-main link">Termos de Serviço</a>
                                     </span>
 
                                 </label>
                                 <label class="mt-25 input-control input-check border-gray checked-action-1">
-                                    <input type="checkbox" name="rules" cheecked="checked">
+                                    <input type="checkbox" name="aceites" cheecked="checked" required>
                                     <div class="mr-10 input-control-box radius6">
                                         <i class="fas fa-check input-control-icon f-12 color-white">
                                         </i>
                                     </div>
                                     <span class="input-control-label">
-                                        Eu li e concordo com a <a href="#" class="underline color-main link">Política de Dados</a>
+                                        Eu li e concordo com a <a href="https://caminoschool.com.br/wp-content/uploads/2021/04/politica-de-seguranca-e-privacidade.pdf" target="_blank" class="underline color-main link">Política de Dados</a>
                                     </span>
 
                                 </label>
@@ -296,22 +304,6 @@
         </section>
 
 
-        <!-- forms alerts -->
-        <div class="alert alert-success alert-dismissible fixed-top alert-form-success" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            Thanks for your message!
-        </div>
-        <div class="alert alert-warning alert-dismissible fixed-top alert-form-check-fields" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            Please, fill in required fields.
-        </div>
-        <div class="alert alert-danger alert-dismissible fixed-top alert-form-error" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <div class="message">An error occurred while sending data :( Please, check if your hosting supports PHP and check how to set form data sending <a href="https://designmodo.com/startup/documentation/#form-handler" target="_blank" class="link color-transparent-white">here</a>.</div>
-        </div>
-
-        <!-- gReCaptcha popup (uncomment if you need a recaptcha integration) -->
-
         <!-- Bootstrap 4.5.2 JS -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
         <!-- Fancybox 3 jQuery plugin JS (Open images and video in popup) -->
@@ -324,6 +316,11 @@
         <script src="/js/jquery.maskedinput.min.js"></script>
         <!-- Startup JS (Custom js for all blocks) -->
         <script src="/js/script.js"></script>
+        
+        <!-- Inclusão do Plugin jQuery Validation-->
+        <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+        <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+        <script src="/js/validacao.js"></script>
 
         <!-- SDK MercadoPago.js V2 -->
         <script src="https://sdk.mercadopago.com/js/v2"></script>
