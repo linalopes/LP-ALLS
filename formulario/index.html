@@ -18,7 +18,7 @@
         <!-- FontAwesome CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <!-- Startup CSS (Styles for all blocks) - Remove ".min" if you would edit a css code -->
-        <link href="../css/style.css" rel="stylesheet" />
+        <link href="/css/style.css" rel="stylesheet" />
         <!-- jQuery 3.5.1 -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     </head> 
@@ -28,7 +28,7 @@
             <div class="container px-xl-0">
                 <div class="row justify-content-between">
                     <div class="order-2 mt-30 mt-lg-0 order-lg-0 col-lg-6 color-heading f-22 semibold text-uppercase sp-20" data-aos="fade-down" data-aos-delay="0">
-                        Formulário para Inscrição
+                        Formulário para Compra
                     </div>
                     <div class="order-0 col-lg-6 color-heading f-22 semibold text-uppercase sp-20" data-aos="fade-down" data-aos-delay="250">
                         Produto
@@ -38,11 +38,44 @@
                         </div>
                     </div>
                     <div class="order-3 order-lg-0 col-xl-5 col-lg-6 col-md-10">
+                        Este formulário é para efetuar a compras do(s) seu(s) ingresso(s) no ALLS, O curso imersivo de Aprendizagem Ativa da Camino School. Selecione uma opção abaixo caso esteja comprando para mais pessoas. <br>No caso de ser uma compra para mais pessoas, entraremos em contato por email para obter o nome dos outros participantes.
                         <form id="user-info-form" class="pt-25 pb-35 radius10" method="post">
                             <div class="row">
                                 <div class="col-md-12 mb-35 block" data-aos="fade-down" data-aos-delay="0">
                                     <div class="f-14 semibold sp-20">
+                                        Estou comprando
+                                    </div>
+                                    <select id="participante-input" name="participante" class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
+                                        <option value="">Selecione</option>
+                                        <option value="eu">Para mim</option>
+                                        <option value="mais">Para mais pessoas</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-35 block" data-aos="fade-down" data-aos-delay="0">
+                                    <div class="f-14 semibold sp-20">
+                                        Pessoa
+                                    </div>
+                                    <select id="pessoa-input" name="pessoa" class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
+                                        <option value="">Selecione</option>
+                                        <option value="PF">Física</option>
+                                        <option value="PJ">Jurídica</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-35 block" data-aos="fade-down" data-aos-delay="0">
+                                    <div class="f-14 semibold sp-20">
                                         Nome Completo
+                                    </div>
+                                    <input id="name-input" type="text" name="name" required minlength="3" class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-35 block" data-aos="fade-down" data-aos-delay="0">
+                                    <div class="f-14 semibold sp-20">
+                                        Razão Social
                                     </div>
                                     <input id="name-input" type="text" name="name" required minlength="3" class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
                                 </div>
@@ -91,9 +124,17 @@
                                     <input id="cpf-input" type="text" name="cpf" required class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-35 block" data-aos="fade-down" data-aos-delay="400">
+                                    <div class="f-14 semibold sp-20">
+                                        CNPJ
+                                    </div>
+                                    <input id="cnpj-input" type="text" name="cnpj" required class="input w-full border-gray focus-action-1 color-heading placeholder-heading">
+                                </div>
+                            </div>
                             <div data-aos="fade-down" data-aos-delay="250">
                                 <label class="mt-25 input-control input-check border-gray checked-action-1">
-                                    <input type="checkbox" name="aceites" cheecked="checked" required>
+                                    <input type="checkbox" name="termo" required>
                                     <div class="mr-10 input-control-box radius6">
                                         <i class="fas fa-check input-control-icon f-12 color-white">
                                         </i>
@@ -104,17 +145,17 @@
 
                                 </label>
                                 <label class="mt-25 input-control input-check border-gray checked-action-1">
-                                    <input type="checkbox" name="aceites" cheecked="checked" required>
+                                    <input type="checkbox" name="privacidade" required>
                                     <div class="mr-10 input-control-box radius6">
                                         <i class="fas fa-check input-control-icon f-12 color-white">
                                         </i>
                                     </div>
                                     <span class="input-control-label">
-                                        Eu li e concordo com a <a href="https://caminoschool.com.br/wp-content/uploads/2021/04/politica-de-seguranca-e-privacidade.pdf" target="_blank" class="underline color-main link">Política de Dados</a>
+                                        Ao prosseguir com essa inscrição, estou ciente e de acordo com as políticas de privacidade da <a href="https://drive.google.com/file/d/1kltLAauALzyG9CY6pLZYTPhLGi2p36Ad/view?usp=sharing" target="_blank" class="underline color-main link">Camino School</a> e da <a href="https://drive.google.com/file/d/1Qh7qANYeco1Qqg8hBII9aaeBoa4Yt2dA/view?usp=sharing" target="_blank" class="underline color-main link">CLOE.</a>
                                     </span>
-
                                 </label>
                             </div>
+                            <input type="submit" />
                         </form>
                     </div>
                     <div class="order-1 order-lg-0 col-lg-6 col-md-10 products">
@@ -313,18 +354,19 @@
         <!-- AOS 2.3.4 jQuery plugin JS (Animations) -->
         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
         <!-- Maskedinput jQuery plugin JS (Masks for input fields) -->
-        <script src="../js/jquery.maskedinput.min.js"></script>
+        <script src="/js/jquery.maskedinput.min.js"></script>
         <!-- Startup JS (Custom js for all blocks) -->
-        <script src="../js/script.js"></script>
-        
+        <script src="/js/script.js"></script>
+
         <!-- Inclusão do Plugin jQuery Validation-->
         <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
         <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
         <script src="/js/validacao.js"></script>
 
+
         <!-- SDK MercadoPago.js V2 -->
         <script src="https://sdk.mercadopago.com/js/v2"></script>
-        <script src="../js/payment.js"></script>
-        <script src="../js/form.js"></script>
+        <script src="/js/payment.js"></script>
+        <script src="/js/form.js"></script>
     </body>
 </html>
