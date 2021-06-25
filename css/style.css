@@ -751,7 +751,7 @@ b, strong {
   height: 100vh;
   background-position: 50% 100%;
   overflow: hidden;
-  background-image: url(../i/header_horizontal.jpg);
+  background-image: url(../i/ALLS_header_LP.mp4);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -1325,6 +1325,16 @@ b, strong {
     width: 40px;
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 78%);
   }
+}
+
+@media (max-width: 699.98px) {
+  .content_33 h3 {
+    font-size: 15px;
+  }
+    .content_33 .btnCircle {
+    width:20vw;
+    height:20vw; 
+    }
 }
 
 /* 7. Features */
@@ -2665,7 +2675,7 @@ b, strong {
 
 /* 10. Teams */
 .team_1 .block {
-  border: 2px solid #ededed;
+  border: 4px solid #ededed;
 }
 .team_1 .block_socials {
   border-top: 2px solid #ededed;
@@ -4887,4 +4897,8 @@ b, strong {
   border: 2px solid #ededed;
   border-top: none;
   height: calc(100% - 160px);
+}
+
+label.error {
+  color: red;
 }
