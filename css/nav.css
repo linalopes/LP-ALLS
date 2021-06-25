@@ -4,8 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width:20vw;
-    height:20vw; 
+    width:10vw;
+    height:10vw; 
     font-size: 1vw;
     outline:none;
     border: none;
@@ -15,6 +15,6 @@
     background-color: #851f82;
 }
 
-#tab1, #tab2, #tab3 {
+#tab2, #tab3 {
     display: none;
 }
